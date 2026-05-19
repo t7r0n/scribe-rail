@@ -1,0 +1,47 @@
+# Scribe Rail
+
+A typed, EHR aware durability rail for AI scribe writes: every note enters a deterministic pipeline of transform -> validate -> write -> confirm -> reconcile with semantic fallback, and the clinician sees one sentence - never a lost session.
+
+## Why This Exists
+
+Nextvisit's whole value prop hinges on ambient transcription -> structured note working reliably across nine EHRs and HL7/FHIR. But every senior engineer who has built one of these knows the failure mode that kills NPS: the model drafts a beautiful note, then the EHR write fails (auth expires, vocabulary mismatch, prior auth field missing, NextGen flake) and the clinician loses the entire encounter.
+
+## What It Builds
+
+- Replays synthetic `nextvisit` and `whole` cases against the project's evidence rules.
+- Scores `nextvisit_coverage`, `whole_risk`, and `value_precision` so regressions are visible in CSV and JSON.
+- Plants `nextvisit drift` and `whole gap` failures as negative controls.
+- Writes citation-locked decision claims; unsupported claims fail verification.
+- Exports a review dashboard and demo pack for `scribe-rail` without hosted services.
+
+## Local Run
+
+```bash
+uv sync
+uv run scribe-rail all
+uv run pytest -q
+uv run ruff check .
+```
+
+## Outputs
+
+- `outputs/analysis.json`
+- `outputs/scenario_report.csv`
+- `outputs/decision_report.md`
+- `outputs/evidence_packet.md`
+- `outputs/dashboard.html`
+- `outputs/demo_pack.zip`
+
+## Sources
+
+- https://news.nextvisit.ai/
+- https://www.barchart.com/story/news/36340110/nextvisit-ai-announces-launch-of-groundbreaking-behavioral-health-documentation-platform
+- https://aijourn.com/nextvisit-ai-announces-launch-of-groundbreaking-behavioral-health-documentation-platform/
+- https://github.com/yannelli
+- https://ryanyannelli.com
+- https://github.com/yannelli/attempt
+- https://www.crunchbase.com/organization/nextvisit
+
+## Boundary
+
+This repository uses synthetic fixtures only. It has no credentials, no customer data, no outreach data, and no dependency on a hosted API.

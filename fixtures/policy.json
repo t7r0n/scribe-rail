@@ -1,0 +1,18 @@
+{
+  "company": "Nextvisit AI",
+  "repo": "scribe-rail",
+  "metrics": [
+    "nextvisit_coverage",
+    "whole_risk",
+    "value_precision",
+    "hinges_latency"
+  ],
+  "failure_modes": [
+    "nextvisit_drift",
+    "whole_gap",
+    "value_misroute",
+    "hinges_blindspot"
+  ],
+  "minimum_cases": 144,
+  "requires_evidence_markers": true
+}

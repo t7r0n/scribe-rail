@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/scribe_rail/__init__.py
+src/scribe_rail/cli.py
+src/scribe_rail/core.py
+src/scribe_rail.egg-info/PKG-INFO
+src/scribe_rail.egg-info/SOURCES.txt
+src/scribe_rail.egg-info/dependency_links.txt
+src/scribe_rail.egg-info/entry_points.txt
+src/scribe_rail.egg-info/top_level.txt
+tests/test_workflow.py

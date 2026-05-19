@@ -1,0 +1,2 @@
+[console_scripts]
+scribe-rail = scribe_rail.cli:main
