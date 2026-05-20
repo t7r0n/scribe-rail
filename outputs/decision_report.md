@@ -1,6 +1,6 @@
 # Decision Report: Scribe Rail
 
-A typed, EHR aware durability rail for AI scribe writes: every note enters a deterministic pipeline of transform -> validate -> write -> confirm -> reconcile with semantic fallback, and the clinician sees one sentence - never a lost session.
+A typed, EHR aware durability rail for AI scribe writes: every note enters a deterministic pipeline of transform -> validate -> write -> confirm -> reconcile with semantic fallback, and the clinician sees one sentence — never a lost session.
 
 ## Evidence-Grounded Findings
 

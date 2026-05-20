@@ -6,7 +6,7 @@
   "cli": "scribe-rail",
   "title": "Scribe Rail",
   "problem": "Nextvisit's whole value prop hinges on ambient transcription -> structured note working reliably across nine EHRs and HL7/FHIR. But every senior engineer who has built one of these knows the failure mode that kills NPS: the model drafts a beautiful note, then the EHR write fails (auth expires, vocabulary mismatch, prior auth field missing, NextGen flake) and the clinician loses the entire encounter.",
-  "direction": "A typed, EHR aware durability rail for AI scribe writes: every note enters a deterministic pipeline of transform -> validate -> write -> confirm -> reconcile with semantic fallback, and the clinician sees one sentence - never a lost session.",
+  "direction": "A typed, EHR aware durability rail for AI scribe writes: every note enters a deterministic pipeline of transform -> validate -> write -> confirm -> reconcile with semantic fallback, and the clinician sees one sentence \u2014 never a lost session.",
   "why": "Nextvisit just shipped iOS in July 2025 and the platform launch in November 2025 (Barchart); encounter volume is about to spike. The right pre emptive investment isn't a better model - it's making the existing one never lose a session. That's the difference between 99 NPS and 70 NPS.",
   "terms": [
     "nextvisit",
