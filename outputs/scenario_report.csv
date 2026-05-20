@@ -1,7 +1,5 @@
 scenario,cases,blocks,reviews,mean_severity,mean_score,top_evidence_id,recommended_action
-hinges policy boundary,24,2,3,1.708,0.286,ev_0033,block release until replay is understood
-nextvisit drift,24,2,3,2.5,0.4061,ev_0088,block release until replay is understood
-nextvisit evidence recall,24,3,3,1.875,0.2794,ev_0066,block release until replay is understood
-value failure replay,24,2,4,3.333,0.5314,ev_0110,block release until replay is understood
-whole gap,24,3,2,3.333,0.535,ev_0011,block release until replay is understood
-whole reviewer handoff,24,2,4,2.583,0.4093,ev_0121,block release until replay is understood
+hinges operator packet,36,4,5,2.556,0.3972,ev_0055,accept only if decision claims cite fixture evidence
+nextvisit evidence replay,36,4,5,2.611,0.4279,ev_0044,block release until cited evidence is regenerated
+value regression harness,36,3,5,2.528,0.3866,ev_0110,open a regression issue with trace and benchmark delta
+whole boundary probe,36,3,4,2.528,0.394,ev_0077,route to reviewer with evidence packet
