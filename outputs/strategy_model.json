@@ -1,0 +1,69 @@
+{
+  "company": "Nextvisit AI",
+  "repo": "scribe-rail",
+  "terms": [
+    "nextvisit",
+    "whole",
+    "value",
+    "hinges",
+    "ambient",
+    "transcription",
+    "structured",
+    "working"
+  ],
+  "metrics": [
+    "nextvisit_coverage",
+    "whole_risk",
+    "value_precision",
+    "hinges_latency"
+  ],
+  "failure_modes": [
+    "nextvisit_drift",
+    "whole_gap",
+    "value_misroute",
+    "hinges_blindspot"
+  ],
+  "evidence_density": 18.75,
+  "pressure_index": 0.3167,
+  "blocked_share": 0.0972,
+  "review_share": 0.1319,
+  "top_leverage_points": [
+    {
+      "rank": 1,
+      "scenario": "nextvisit evidence replay",
+      "metric": "nextvisit_coverage",
+      "failure_mode": "nextvisit_drift",
+      "evidence": "ev_0044",
+      "operator_action": "block release until cited evidence is regenerated",
+      "severity": 2.611
+    },
+    {
+      "rank": 2,
+      "scenario": "hinges operator packet",
+      "metric": "whole_risk",
+      "failure_mode": "whole_gap",
+      "evidence": "ev_0055",
+      "operator_action": "accept only if decision claims cite fixture evidence",
+      "severity": 2.556
+    },
+    {
+      "rank": 3,
+      "scenario": "value regression harness",
+      "metric": "value_precision",
+      "failure_mode": "value_misroute",
+      "evidence": "ev_0110",
+      "operator_action": "open a regression issue with trace and benchmark delta",
+      "severity": 2.528
+    },
+    {
+      "rank": 4,
+      "scenario": "whole boundary probe",
+      "metric": "hinges_latency",
+      "failure_mode": "hinges_blindspot",
+      "evidence": "ev_0077",
+      "operator_action": "route to reviewer with evidence packet",
+      "severity": 2.528
+    }
+  ],
+  "readout": "Nextvisit AI gets a local, deterministic pressure test around nextvisit, whole, and value. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action."
+}
