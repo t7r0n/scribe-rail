@@ -1,13 +1,13 @@
-# Operator Brief: Nextvisit AI
+# Operator Brief: Scribe Rail
 
-Nextvisit AI gets a local, deterministic pressure test around nextvisit, whole, and value. The useful part is the repeatable evidence path from fixture to failure to operator action.
+This local harness runs a deterministic pressure test around evidence, workflow, and review. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 
-- nextvisit evidence replay -> block release until cited evidence is regenerated (nextvisit_coverage, evidence ev_0044).
-- hinges operator packet -> accept only if decision claims cite fixture evidence (whole_risk, evidence ev_0055).
-- value regression harness -> open a regression issue with trace and benchmark delta (value_precision, evidence ev_0110).
-- whole boundary probe -> route to reviewer with evidence packet (hinges_latency, evidence ev_0077).
+- evidence replay -> block release until cited evidence is regenerated (evidence_coverage, evidence ev_0088).
+- review operator packet -> accept only if decision claims cite fixture evidence (handoff_risk, evidence ev_0099).
+- claim regression harness -> open a regression issue with trace and benchmark delta (claim_precision, evidence ev_0022).
+- handoff boundary probe -> route to reviewer with evidence packet (review_latency, evidence ev_0033).
 
 ## What makes this useful
 

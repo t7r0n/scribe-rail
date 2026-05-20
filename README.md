@@ -53,16 +53,6 @@ uv run ruff check .
 - `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
 
-## Sources
-
-- https://news.nextvisit.ai/
-- https://www.barchart.com/story/news/36340110/nextvisit-ai-announces-launch-of-groundbreaking-behavioral-health-documentation-platform
-- https://aijourn.com/nextvisit-ai-announces-launch-of-groundbreaking-behavioral-health-documentation-platform/
-- https://github.com/yannelli
-- https://ryanyannelli.com
-- https://github.com/yannelli/attempt
-- https://www.crunchbase.com/organization/nextvisit
-
 ## Boundary
 
 Everything runs locally against synthetic fixtures. There are no credentials, no customer records, no outreach files, and no hosted API dependency.

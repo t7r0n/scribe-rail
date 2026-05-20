@@ -1,75 +1,61 @@
 {
-  "company": "Nextvisit AI",
-  "company_slug": "nextvisit-ai",
+  "company": "Scribe Rail",
+  "company_slug": "scribe-rail",
   "repo": "scribe-rail",
   "package": "scribe_rail",
   "cli": "scribe-rail",
   "title": "Scribe Rail",
   "problem": "Nextvisit's whole value prop hinges on ambient transcription -> structured note working reliably across nine EHRs and HL7/FHIR. But every senior engineer who has built one of these knows the failure mode that kills NPS: the model drafts a beautiful note, then the EHR write fails (auth expires, vocabulary mismatch, prior auth field missing, NextGen flake) and the clinician loses the entire encounter.",
-  "direction": "A typed, EHR aware durability rail for AI scribe writes: every note enters a deterministic pipeline of transform -> validate -> write -> confirm -> reconcile with semantic fallback, and the clinician sees one sentence \u2014 never a lost session.",
-  "why": "Nextvisit just shipped iOS in July 2025 and the platform launch in November 2025 (Barchart); encounter volume is about to spike. The right pre emptive investment isn't a better model - it's making the existing one never lose a session. That's the difference between 99 NPS and 70 NPS.",
+  "direction": "A typed, EHR aware durability rail for AI scribe writes: every note enters a deterministic pipeline of transform -> validate -> write -> confirm -> reconcile with semantic fallback, and the clinician sees one sentence - never a lost session.",
+  "why": "This repository is intentionally project-branded rather than company-branded. It focuses on deterministic replay, source-grounded analysis, and reviewer-visible evidence paths.",
   "terms": [
-    "nextvisit",
-    "whole",
-    "value",
-    "hinges",
-    "ambient",
-    "transcription",
-    "structured",
-    "working",
-    "reliably",
-    "across",
-    "senior",
-    "engineer",
-    "knows",
-    "failure",
-    "kills",
-    "model",
-    "drafts",
-    "beautiful"
+    "evidence",
+    "workflow",
+    "review",
+    "claims",
+    "fixtures",
+    "replay",
+    "handoff",
+    "trace",
+    "policy",
+    "decision",
+    "coverage",
+    "latency"
   ],
   "metrics": [
-    "nextvisit_coverage",
-    "whole_risk",
-    "value_precision",
-    "hinges_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "nextvisit_drift",
-    "whole_gap",
-    "value_misroute",
-    "hinges_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
   "archetypes": [
     {
-      "name": "nextvisit evidence replay",
-      "trigger": "nextvisit signal changes while whole context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "whole boundary probe",
-      "trigger": "whole handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "value regression harness",
-      "trigger": "value behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "hinges operator packet",
-      "trigger": "hinges output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources": [
-    "https://news.nextvisit.ai/",
-    "https://www.barchart.com/story/news/36340110/nextvisit-ai-announces-launch-of-groundbreaking-behavioral-health-documentation-platform",
-    "https://aijourn.com/nextvisit-ai-announces-launch-of-groundbreaking-behavioral-health-documentation-platform/",
-    "https://github.com/yannelli",
-    "https://ryanyannelli.com",
-    "https://github.com/yannelli/attempt",
-    "https://www.crunchbase.com/organization/nextvisit"
-  ],
+  "sources": [],
   "github_url": "https://github.com/t7r0n/scribe-rail"
 }
