@@ -1,6 +1,6 @@
 # Operator Brief: Nextvisit AI
 
-Nextvisit AI gets a local, deterministic pressure test around nextvisit, whole, and value. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action.
+Nextvisit AI gets a local, deterministic pressure test around nextvisit, whole, and value. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 
